@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-const connectDB = require('./config/db');
 const app = express();
 app.use(cors());
 app.use(express.json());
-connectDB();
+app.use('/api/v1/auth', require('./routes/authRoutes'));
+app.use('/api/v1/clients', require('./routes/clientRoutes'));
+app.use('/api/v1/invoices', require('./routes/invoiceRoutes'));
+app.use('/api/v1/payments', require('./routes/paymentRoutes'));
 module.exports = app;
