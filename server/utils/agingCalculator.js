@@ -1,0 +1,1 @@
+exports.getAgingBucket = (dueDate) => { const diff = (new Date() - new Date(dueDate)) / (1000 * 60 * 60 * 24); if (diff <= 0) return 'current'; if (diff <= 30) return '1-30'; if (diff <= 60) return '31-60'; return '60+'; };
