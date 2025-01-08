@@ -1,2 +1,2 @@
-import React from 'react';
-export default () => <div><h3>Clients</h3></div>;
+import React, { useState } from 'react';
+export default () => <div><h3>Search Clients</h3><input placeholder="Filter..." /></div>;
