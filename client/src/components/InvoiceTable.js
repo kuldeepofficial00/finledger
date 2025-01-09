@@ -1,2 +1,3 @@
 import React from 'react';
-export default () => <div><div><span>All</span> | <span>Paid</span> | <span>Overdue</span></div></div>;
+import EmptyState from './EmptyState';
+export default ({ invoices = [] }) => invoices.length === 0 ? <EmptyState /> : <table>...</table>;
