@@ -1,6 +1,8 @@
 {
   "name": "finledger",
-  "version": "0.4.0",
+  "version": "1.0.0",
+  "description": "B2B Invoicing & Financial Operations Portal",
+  "main": "server/server.js",
   "scripts": { "start": "node server/server.js", "test": "node server/tests/e2e.test.js", "seed": "node server/utils/seedFixtures.js" },
   "dependencies": { "cors": "^2.8.5", "express": "^4.18.2", "jsonwebtoken": "^9.0.2", "mongoose": "^7.5.0" }
 }
